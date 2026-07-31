@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="css/pomodoro.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Timer Section -->
+    <div class="top">
+        <div class="timer-box">
+            <div class="progress"></div>
+            <div id="time">20:00</div>
+        </div>
+        <h2 id="mode">Session 1</h2>
+    </div>
+
+    <div class="bottom">
+        <div class="settings">
+            <div class="setting">
+                <h4>session time</h4>
+                <p id="sessionValue">20 min</p>
+                <div class="buttons">
+                    <button id="sessionMinus">-</button>
+                    <button id="sessionPlus">+</button>
+                </div>
+            </div>
+
+            <div class="setting">
+                <h4>break time</h4>
+                <p id="breakValue">5 min</p>
+                <div class="buttons">
+                    <button id="breakMinus">-</button>
+                    <button id="breakPlus">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="actionButtons">
+            <button id="startBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+</div>
+<script src="js/pomodoro.js"></script>
+
+</body>
+</html>
