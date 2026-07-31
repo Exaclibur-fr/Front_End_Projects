@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#2d2d2d;
+}
+
+.container{
+    width:380px;
+    height:500px;
+    background:#6d4e3f;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+}
+
+.top{
+    flex:1;
+    background:#755849;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.timer-box{
+    width:300px;
+    height:120px;
+    border:6px solid #b58a75;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+#time{
+    font-size:55px;
+    font-weight:bold;
+    color:white;
+    letter-spacing:2px;
+}
+
+#mode{
+    color:white;
+    font-size:24px;
+    font-weight:normal;
+}
+
+.bottom{
+    flex:1;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.settings{
+    display:flex;
+    justify-content:space-between;
+}
+
+.setting{
+    width:45%;
+    text-align:center;
+}
+
+.setting h4{
+    color:#666;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.setting p{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.buttons button{
+    width:38px;
+    height:38px;
+    border:none;
+    border-radius:50%;
+    background:#ececec;
+    font-size:22px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.buttons button:hover{
+    background:#d8d8d8;
+}
+
+.actionButtons{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:20px;
+}
+
+.actionButtons button{
+    width:120px;
+    height:42px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+#startBtn{
+    background:#4caf50;
+}
+
+#startBtn:hover{
+    background:#43a047;
+}
+
+#resetBtn{
+    background:#f44336;
+}
+
+#resetBtn:hover{
+    background:#e53935;
+}
+
+button:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
